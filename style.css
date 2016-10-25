@@ -1,0 +1,54 @@
+body {
+	font-family: Arial, serif;
+}
+
+ul {
+	margin-top: 0;
+}
+
+.notecard {
+	background-color: #eee;
+	width: 500px;
+	position: relative;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	box-shadow: 3px 3px 3px #aaa;
+	float: left;
+}
+
+.notecard:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 50px solid white;
+	border-right: 50px solid black;
+	width: 0;
+}
+
+.notecard-content {
+	border: 5px solid black;
+	width: 490px;
+}
+
+.notecard-title {
+	margin-left: 60px;
+	margin-top: 5px;
+	font-size: 36px;
+}
+
+.notecard-body {
+	margin: 20px;
+}
+
+.half-width {
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bottom-right {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}
