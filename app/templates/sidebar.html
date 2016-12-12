@@ -1,0 +1,8 @@
+<div (window:keyup)="onKeyup($event)">
+  <div class="shortcut" [class.highlight]="section.selected"
+       (click)="select(section.key)"
+       *ngFor="let section of sections">
+    <img src="./app/images/{{section.icon}}" />
+    <div class="hotkey">{{section.hotkey | uppercase}}</div>
+  </div>
+</div>

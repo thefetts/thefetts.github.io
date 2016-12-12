@@ -1,73 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-<div class="notecard">
-	<div class="notecard-content">
-		<div class="notecard-title">Jordan Fallon</div>
-		<div class="notecard-body">
-			<a href="https://linkedin.com/in/jordan-fallon-25988a1b">LinkedIn</a> &bull;
-			<a href="https://github.com/thefetts">Github</a> &bull;
-			<a href="mailto:thefetts@gmail.com">thefetts@gmail.com</a><br/>
-			<p>A software engineer from Denver, CO. Enjoys TDD and pairing, and prefers to work full stack.</p>
-			<p>Can quickly ramp onto a Java, Ruby or JavaScript project, but would love to learn whatever technologies
-				you use too!</p>
-		</div>
-	</div>
-</div>
+  <head>
+    <title>Jordan Fallon - Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 
-<div class="notecard">
-	<div class="notecard-content">
-		<div class="notecard-title">Front End Experience</div>
-		<div class="notecard-body">
-			<h3>JavaScript</h3>
-			<div class="half-width">
-				Flavors:
-				<ul>
-					<li>ES6</li>
-					<li>ES5</li>
-					<li>JSX</li>
-					<li>TypeScript</li>
-					<li>CoffeeScript</li>
-				</ul>
-			</div>
-			<div class="half-width">
-				Frameworks:
-				<ul>
-					<li>React + Redux</li>
-					<li>Angular 2</li>
-					<li>Angular 1</li>
-					<li>jQuery</li>
-					<li>Vanilla</li>
-				</ul>
-			</div>
-			<div class="half-width">
-				Build Tools:
-				<ul>
-					<li>npm</li>
-					<li>gulp</li>
-					<li>webpack</li>
-					<li>bower</li>
-				</ul>
-			</div>
-			<div class="half-width">
-				Testing:
-				<ul>
-					<li>jasmine</li>
-					<li>karma</li>
-					<li>RSpec</li>
-					<li>Capybara</li>
-					<li>enzyme</li>
-					<li>protractor</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="bottom-right">
-	<img src="vanilla.png" title="Powered by Vanilla.js"/>
-</div>
-</body>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <resume />
+  </body>
 </html>
